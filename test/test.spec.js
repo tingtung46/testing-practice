@@ -1,11 +1,13 @@
 import { capitalize, reverseString, Calculator } from "./index.js";
 
-test("capitalize a string", () => {
-  expect(capitalize("outdoor")).toMatch(/Outdoor/);
-});
+describe("string", () => {
+  test("capitalize a string", () => {
+    expect(capitalize("outdoor")).toMatch(/Outdoor/);
+  });
 
-test("reverse a string", () => {
-  expect(reverseString("hiking")).toMatch("gnikih");
+  test("reverse a string", () => {
+    expect(reverseString("hiking")).toMatch("gnikih");
+  });
 });
 
 describe("calculator", () => {

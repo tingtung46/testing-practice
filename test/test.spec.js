@@ -12,4 +12,8 @@ describe("calculator", () => {
   test("add two numbers", () => {
     expect(Calculator.add(2, 2)).toEqual(4);
   });
+
+  test("subtract two numbers", () => {
+    expect(Calculator.subtract(2, 4)).toEqual(-2);
+  });
 });

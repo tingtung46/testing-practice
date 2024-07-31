@@ -15,5 +15,9 @@ export const Calculator = (function () {
     return a + b;
   };
 
-  return { add };
+  const subtract = (a, b) => {
+    return a - b;
+  };
+
+  return { add, subtract };
 })();

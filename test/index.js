@@ -9,3 +9,11 @@ export const reverseString = (string) => {
 
   return newString;
 };
+
+export const Calculator = (function () {
+  const add = (a, b) => {
+    return a + b;
+  };
+
+  return { add };
+})();

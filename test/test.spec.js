@@ -1,4 +1,9 @@
-import { capitalize, reverseString, Calculator } from "./index.js";
+import {
+  capitalize,
+  reverseString,
+  Calculator,
+  analyzeArray,
+} from "./index.js";
 
 describe("string", () => {
   test("capitalize a string", () => {
@@ -25,5 +30,14 @@ describe("calculator", () => {
 
   test("multiply two numbers", () => {
     expect(Calculator.multiply(2, 2)).toEqual(4);
+  });
+});
+
+describe("array", () => {
+  test("take an array of number to desired properties", () => {
+    expect(analyzeArray([1, 8, 3, 4, 2, 6])).toHaveProperty("average", 4);
+    expect(analyzeArray([1, 8, 3, 4, 2, 6])).toHaveProperty("min", 1);
+    expect(analyzeArray([1, 8, 3, 4, 2, 6])).toHaveProperty("max", 8);
+    expect(analyzeArray([1, 8, 3, 4, 2, 6])).toHaveProperty("length", 6);
   });
 });

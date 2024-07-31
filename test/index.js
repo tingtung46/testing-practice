@@ -3,3 +3,9 @@ export const capitalize = (string) => {
 
   return newString;
 };
+
+export const reverseString = (string) => {
+  const newString = string.split("").reverse().join("");
+
+  return newString;
+};

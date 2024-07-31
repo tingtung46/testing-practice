@@ -23,5 +23,9 @@ export const Calculator = (function () {
     return a / b;
   };
 
-  return { add, subtract, divide };
+  const multiply = (a, b) => {
+    return a * b;
+  };
+
+  return { add, subtract, divide, multiply };
 })();

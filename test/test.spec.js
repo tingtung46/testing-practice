@@ -22,4 +22,8 @@ describe("calculator", () => {
   test("divide two numbers", () => {
     expect(Calculator.divide(4, 2)).toEqual(2);
   });
+
+  test("multiply two numbers", () => {
+    expect(Calculator.multiply(2, 2)).toEqual(4);
+  });
 });

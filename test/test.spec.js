@@ -2,6 +2,7 @@ import {
   capitalize,
   reverseString,
   Calculator,
+  caesarCipher,
   analyzeArray,
 } from "./index.js";
 
@@ -30,6 +31,20 @@ describe("calculator", () => {
 
   test("multiply two numbers", () => {
     expect(Calculator.multiply(2, 2)).toEqual(4);
+  });
+});
+
+describe("caesar cipher", () => {
+  test("shift 3 characters", () => {
+    expect(caesarCipher("xyz", 3)).toMatch("abc");
+  });
+
+  test("case preservation", () => {
+    expect(caesarCipher("HeLLo", 3)).toMatch("KhOOr");
+  });
+
+  test("punctuation", () => {
+    expect(caesarCipher("Hello, World!", 3)).toMatch("Khoor, Zruog!");
   });
 });
 

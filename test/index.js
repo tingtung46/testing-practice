@@ -19,5 +19,9 @@ export const Calculator = (function () {
     return a - b;
   };
 
-  return { add, subtract };
+  const divide = (a, b) => {
+    return a / b;
+  };
+
+  return { add, subtract, divide };
 })();

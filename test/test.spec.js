@@ -18,4 +18,8 @@ describe("calculator", () => {
   test("subtract two numbers", () => {
     expect(Calculator.subtract(2, 4)).toEqual(-2);
   });
+
+  test("divide two numbers", () => {
+    expect(Calculator.divide(4, 2)).toEqual(2);
+  });
 });
